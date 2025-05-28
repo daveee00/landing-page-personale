@@ -1,0 +1,227 @@
+@media (max-width: 1000px) {
+  .content {
+    margin: 14px 20px 0px 20px;
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    height: 80vh;
+    position: relative;
+    border-bottom: 2px solid black;
+  }
+
+  /*–––––––primo–––––––*/
+  #first-drawing .content-title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+
+  #first-drawing .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+
+  #first-drawing .content-text p {
+    margin-left: 0;
+    margin-bottom: 80%;
+    text-align: right;
+  }
+
+  #first-drawing .content-drawing {
+    align-items: last baseline;
+    justify-content: flex-end;
+  }
+
+  #first-drawing img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 15%;
+  }
+
+  /*–––––––secondo–––––––*/
+  #second-drawing .content-title {
+    flex-direction: row !important;
+    align-items: right !important;
+    justify-content: flex-end !important;
+    padding-top: 10%;
+  }
+
+  #second-drawing .content-title p {
+    padding-left: 30%;
+  }
+
+  #second-drawing .content-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+  }
+  #second-drawing .content-text p {
+    margin-left: 0px;
+    margin-bottom: 30%;
+  }
+
+  #second-drawing .content-drawing {
+    align-items: flex-start;
+    justify-content: right !important;
+  }
+
+  #second-drawing img {
+    height: 70%;
+    margin-bottom: 30%;
+    margin-right: 40%;
+  }
+
+  /*–––––––terzo–––––––*/
+  #third-drawing .content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  #third-drawing .spacer {
+    padding-top: 15%;
+  }
+
+  #third-drawing .content-title p {
+    padding-left: 80px;
+    padding-top: 0px !important;
+    height: auto;
+  }
+
+  #third-drawing .content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  #third-drawing .content-text p {
+    margin-left: 0px;
+    margin-bottom: 30%;
+  }
+
+  #third-drawing .content-drawing {
+    align-items: center;
+    justify-content: right;
+  }
+
+  #third-drawing img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /*–––––––quarto–––––––*/
+  #fourth-drawing .content-title {
+    align-items: flex-start;
+    justify-content: right !important;
+  }
+
+  #fourth-drawing .spacer {
+    padding-top: 5%;
+  }
+
+  #fourth-drawing .content-title p {
+    padding-left: 80px;
+    text-align: right;
+  }
+
+  #fourth-drawing .content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  #fourth-drawing .content-text p {
+    margin-left: 0px;
+    margin-bottom: 30%;
+  }
+
+  #fourth-drawing .content-drawing {
+    display: flex !important;
+    flex-direction: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #fourth-drawing img {
+    height: 80%;
+    margin-right: 0px !important;
+    margin-bottom: 0px;
+  }
+  /*–––––––quinto–––––––*/
+  #fifth-drawing .content-title {
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  #fifth-drawing .spacer {
+    width: 60%;
+    padding-top: 15%;
+    padding-bottom: 12px;
+    border-bottom: 2px solid black;
+  }
+  #fifth-drawing .content-title p {
+    padding-left: 80px;
+  }
+
+  #fifth-drawing .content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+
+  #fifth-drawing .content-text p {
+    margin-left: 0px;
+    margin-bottom: 20%;
+  }
+
+  #fifth-drawing .content-drawing {
+    align-items: last baseline;
+    justify-content: right;
+  }
+
+  #fifth-drawing img {
+    width: 100%;
+    padding-bottom: 120px;
+    margin-bottom: 0px !important;
+  }
+  /*–––––––sesto–––––––*/
+  #sixth-drawing .content-title {
+    align-items: center !important;
+    justify-content: left !important;
+  }
+
+  #sixth-drawing .spacer {
+    padding-top: 10% !important;
+  }
+
+  #sixth-drawing .content-title p {
+    padding-left: 0px !important;
+  }
+
+  #sixth-drawing .content-text {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: end;
+  }
+
+  #sixth-drawing .content-text p {
+    margin-left: 0px;
+    margin-bottom: 40%;
+  }
+
+  #sixth-drawing .content-drawing {
+    align-items: start;
+    justify-content: end;
+  }
+
+  #sixth-drawing img {
+    height: 100%;
+  }
+  /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+}
