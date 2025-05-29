@@ -39,7 +39,7 @@
 }
 
 #first-drawing img {
-  height: 80%;
+  height: 100%;
   margin-right: 80px;
   margin-bottom: 80px;
 }
@@ -165,7 +165,7 @@
 
 #fifth-drawing .content-text p {
   margin-left: 0px;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
 }
 
 #fifth-drawing .content-drawing {
