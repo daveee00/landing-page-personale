@@ -54,6 +54,7 @@
 
 #second-drawing .content-title p {
   padding-left: 80px;
+  padding-top: 15% !important;
 }
 
 #second-drawing .content-text {
@@ -64,7 +65,7 @@
 }
 #second-drawing .content-text p {
   margin-left: 0%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 #second-drawing .content-drawing {
@@ -84,6 +85,10 @@
   justify-content: left;
 }
 
+#third-drawing .spacer {
+  padding-top: 5% !important; 
+}
+
 #third-drawing .content-title p {
   padding-left: 80px;
 }
@@ -95,7 +100,7 @@
 }
 
 #third-drawing .content-text p {
-  margin-left: 400px;
+  margin-left: 0px;
   margin-bottom: 240px;
 }
 
@@ -105,7 +110,7 @@
 }
 
 #third-drawing img {
-  height: 60%;
+  height: 90%;
   margin-bottom: 80px;
 }
 
