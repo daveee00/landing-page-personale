@@ -203,12 +203,29 @@
 }
 
 #sixth-drawing .content-drawing {
-  align-items: last baseline;
+  align-items: flex-start;
   justify-content: center;
 }
 
 #sixth-drawing img {
-  height: 100%;
+  height: 90%;
+}
+
+/* Floating animation for sixth drawing */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#sixth-drawing img {
+  animation: float 3s ease-in-out infinite;
 }
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
