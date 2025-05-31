@@ -1,0 +1,209 @@
+@media (min-width: 600px) and (max-width: 1024px) {
+
+.separator-container {
+  margin: 14px 20px 0px 20px;
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  height: 60vh;
+  position: relative;
+  display: flex;
+  /*flex-direction: row !important;
+  justify-content: space-between;
+  align-items: top;*/
+}
+
+.separator .context {
+  width: 100% !important;
+  height: 100%;
+  padding-top: 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.separator .spacer-img {
+  width: 100% !important;
+  height: 100%;
+  padding-top: 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.separator .separator-container img {
+  height: 100%;
+  padding-right: 10%;
+  z-index: -1;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.sketchbook {
+  margin: 14px 20px 0px 20px;
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  height: 100vh;
+  position: relative;
+  border-bottom: 2px solid black;
+}
+
+.sketchbook-heading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 8px;
+}
+
+.sketchbook-heading p {
+  margin-top: 4% !important;
+  margin-left: 45%;
+  position: absolute;
+  left: 0;
+}
+
+.sketchbook-canvas-area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sketchbook-canvas {
+  height: 60%;
+  margin-bottom: 120px;
+}
+
+#skt-canvas {
+  aspect-ratio: 4/3;
+  z-index: 1;
+  background: url(https://cdn.jsdelivr.net/gh/daveee00/drawings/paper-texture.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skt-canvas img {
+  height: 100%;
+  mix-blend-mode: normal;
+}
+
+#list-canvas {
+  aspect-ratio: 16/9;
+  display: block;
+  overflow: scroll;
+}
+
+#list-canvas button {
+  width: 100%;
+  height: 56px;
+  background: rgba(0, 0, 0, 10%);
+  opacity: calc(40%);
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  opacity: calc(40%);
+  display: flex;
+  align-items: center;
+}
+
+#list-canvas .list-element p {
+  margin-left: 8px;
+  font-family: "Humane";
+  font-weight: 400;
+  font-size: 3.5em;
+  letter-spacing: 4%;
+}
+#list-canvas .list-element p .list-artist {
+  font-family: inherit;
+  opacity: calc(50%);
+}
+
+#list-canvas .list-element:hover {
+  cursor: pointer;
+  opacity: calc(100%);
+}
+
+#list-canvas .list-element:hover .list-artist {
+  opacity: calc(50%);
+}
+
+#list-canvas .list-element-after {
+  cursor: pointer;
+  opacity: calc(100%);
+}
+
+#list-canvas .list-artist-after {
+  opacity: calc(50%);
+}
+
+#list-canvas .button-after {
+  width: 100%;
+  height: 56px;
+  background: rgba(16, 52, 131, 0.1);
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  opacity: calc(100%);
+  display: flex;
+  align-items: center;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#scroll-indicator p {
+  transform: rotate(90deg);
+}
+
+#scroll-indicator .skt-scroll-line {
+  height: 50%;
+  width: 2px;
+}
+
+#scroll-indicator .skt-scroll-line {
+  width: 2%;
+  height: 60%;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+#scroll-indicator #scrolling-line-skt {
+  height: 100%;
+  width: 2.5px;
+  border-radius: 10px;
+  opacity: calc(50%);
+  background: black;
+}
+
+.information-scroll {
+  display: none;
+}
+
+}
+

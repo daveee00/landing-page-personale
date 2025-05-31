@@ -1,0 +1,236 @@
+@media (max-width: 1024px) {
+
+
+/*––––––––––––––––––––––––––––––––––––content section––––––––––––––––––––––––––––––––––––*/
+
+.content {
+  margin: 14px 20px 0px 20px;
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  height: 100vh;
+  position: relative;
+  border-bottom: 2px solid black;
+}
+
+/*–––––––primo–––––––*/
+#first-drawing .content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+#first-drawing .content-title p {
+  padding-left: 80px;
+  padding-top: 5% !important;
+}
+
+#first-drawing .content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#first-drawing .content-text p {
+  margin-left: 35%;
+  margin-bottom: 5%;
+}
+
+#first-drawing .content-drawing {
+  align-items: last baseline;
+  justify-content: right;
+}
+
+#first-drawing img {
+  height: 40%;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+/*–––––––secondo–––––––*/
+#second-drawing .content-title {
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: right !important;
+}
+
+#second-drawing .content-title p {
+  padding-left: 80px;
+  padding-top: 15% !important;
+}
+
+#second-drawing .content-text {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: end !important;
+  align-items: start;
+}
+#second-drawing .content-text p {
+  margin-left: 0%;
+  margin-bottom: 20%;
+}
+
+#second-drawing .content-drawing {
+  align-items: last baseline;
+  justify-content: center;
+}
+
+#second-drawing img {
+  height: 60%;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+/*–––––––terzo–––––––*/
+#third-drawing .content-title {
+  align-items: flex-start;
+  justify-content: left;
+}
+
+#third-drawing .spacer {
+  padding-top: 5% !important; 
+}
+
+#third-drawing .content-title p {
+  padding-left: 80px;
+}
+
+#third-drawing .content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#third-drawing .content-text p {
+  margin-left: 0px;
+  margin-bottom: 240px;
+}
+
+#third-drawing .content-drawing {
+  align-items: last baseline;
+  justify-content: right;
+}
+
+#third-drawing img {
+  height: 90%;
+  margin-bottom: 80px;
+}
+
+/*–––––––quarto–––––––*/
+#fourth-drawing .content-title {
+  align-items: flex-start;
+  justify-content: left;
+}
+
+#fourth-drawing .spacer {
+  padding-top: 15%;
+}
+
+#fourth-drawing .content-title p {
+  padding-left: 80px;
+}
+
+#fourth-drawing .content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#fourth-drawing .content-text p {
+  margin-left: 400px;
+  margin-bottom: 240px;
+}
+
+#fourth-drawing .content-drawing {
+  align-items: last baseline;
+  justify-content: right;
+}
+
+#fourth-drawing img {
+  height: 80%;
+  margin-right: 80px;
+  margin-bottom: px;
+}
+/*–––––––quinto–––––––*/
+#fifth-drawing .content-title {
+  align-items: flex-start;
+  justify-content: left;
+}
+
+#fifth-drawing .spacer {
+  padding-top: 5%;
+  border-bottom: 2px solid black;
+  padding-bottom: 16px;
+  width: 45%;
+}
+
+#fifth-drawing .content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#fifth-drawing .content-text p {
+  margin-left: 0px;
+  margin-bottom: 20%;
+}
+
+#fifth-drawing .content-drawing {
+  align-items: last baseline;
+  justify-content: right;
+}
+
+#fifth-drawing img {
+  height: 60%;
+  margin-bottom: 16%;
+}
+
+/*–––––––sesto–––––––*/
+#sixth-drawing .content-title {
+  align-items: flex-start;
+  justify-content: right !important;
+}
+
+#sixth-drawing .content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+}
+
+#sixth-drawing .content-text p {
+  text-align: left;
+  margin-left: 0%;
+  margin-bottom: 240px;
+}
+
+#sixth-drawing .content-drawing {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#sixth-drawing img {
+  height: 90%;
+}
+
+/* Floating animation for sixth drawing */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#sixth-drawing img {
+  animation: float 3s ease-in-out infinite;
+}
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+}

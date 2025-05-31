@@ -1,11 +1,31 @@
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+
+@font-face {
+  font-family: 'Humane';
+  src: url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.otf') format('opentype'),
+       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Humane';
+  src: url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.otf') format('opentype'),
+       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 .text-bigger p {
   color: #231815;
   flex: none;
   font-feature-settings: "palt" 1;
   font-family: monospace !important;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   height: auto;
@@ -26,6 +46,7 @@
     font-feature-settings: "palt" 1;
     font-size: 16px;
     font-style: normal;
+    font-family: monospace !important;
     font-weight: 500;
     height: auto;
     letter-spacing: normal;
@@ -41,7 +62,7 @@
 
 .title-drawing p {
   font-family: "Humane" !important;
-  font-size: 4em;
+  font-size: 9em;
   font-weight: 600;
   line-height: 1 !important;
   height: 1em !important;
@@ -75,9 +96,6 @@
     z-index: 3;
 }
 
-.content .content-text p {
-  font-size: 14px;
-}
 .content .content-drawing {
   position: absolute;
   top: 0;
@@ -89,7 +107,7 @@
 }
 
 .content .content-drawing img {
-    max-width: 80%;
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
@@ -119,4 +137,6 @@
   z-index: 2 !important;
   overflow: visible !important;
 }
+
+
 }

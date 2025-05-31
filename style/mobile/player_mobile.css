@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .suggestions-and-links {
     display: flex;
     flex-direction: column;
