@@ -24,7 +24,7 @@
     color: #231815;
     flex: none;
     font-feature-settings: "palt" 1;
-    font-size: 16px;
+    font-size: 1em !important;
     font-style: normal;
     font-weight: 500;
     height: auto;

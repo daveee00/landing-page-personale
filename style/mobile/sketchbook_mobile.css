@@ -149,7 +149,7 @@
   }
 
   #list-canvas .list-element:hover .list-artist {
-    opacity: calc(50%);
+    opacity: calc(30%);
   }
 
   #list-canvas .list-element-after {
@@ -164,7 +164,7 @@
   #list-canvas .button-after {
     width: 100%;
     height: 56px;
-    background: rgba(16, 52, 131, 0.1);
+    background: rgba(0,0,0,10%);
     border: none;
     border-radius: 16px;
     margin-bottom: 8px;

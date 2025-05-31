@@ -107,10 +107,11 @@
 #third-drawing .content-drawing {
   align-items: last baseline;
   justify-content: right;
+  overflow: hidden;
 }
 
 #third-drawing img {
-  height: 90%;
+  height: 85%;
   margin-bottom: 80px;
 }
 
@@ -167,6 +168,7 @@
   flex-direction: column;
   justify-content: end;
 }
+
 
 #fifth-drawing .content-text p {
   margin-left: 0px;
