@@ -20,7 +20,18 @@ const ButtonIds = [
   "player-06"
 ];
 
-// Player-related functions
+const audioPlay = [
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/thank-u-next.mp3",
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/espresso-sabrina.mp3",
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/runrunrundolph.mp3",
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/twilight-zone-ariana.mp3",
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/diva.mp3",
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/donatella.mp3",
+];
+
+let currentlyPlayingAudio = null;
+let currentlyPlayingElement = null;
+
 function playerCheck() {
   const buttonsIds = ['player-01', 'player-02', 'player-03', 'player-04', 'player-05', 'player-06'];
   buttonsIds.forEach((id, index) => {
@@ -73,6 +84,50 @@ function crossCheckPlayer() {
   });
 }
 
+function handleSuggestionPlayerClick(event) {
+  const clickedElement = event.currentTarget;
+  const clickedId = clickedElement.id;
+  const index = ButtonIds.indexOf(clickedId);
+
+  if (index === -1) return;
+
+  // If clicking the same element that's currently playing, stop the audio
+  if (currentlyPlayingElement === clickedElement) {
+    if (currentlyPlayingAudio) {
+      currentlyPlayingAudio.pause();
+      currentlyPlayingAudio.currentTime = 0;
+      currentlyPlayingAudio = null;
+      currentlyPlayingElement = null;
+    }
+    return;
+  }
+
+  // If there's audio playing from a different element, stop it
+  if (currentlyPlayingAudio) {
+    currentlyPlayingAudio.pause();
+    currentlyPlayingAudio.currentTime = 0;
+  }
+
+  // Play the new audio
+  const audio = new Audio(audioPlay[index]);
+  audio.play();
+  currentlyPlayingAudio = audio;
+  currentlyPlayingElement = clickedElement;
+
+  // Add event listener to reset state when audio ends
+  audio.addEventListener('ended', () => {
+    currentlyPlayingAudio = null;
+    currentlyPlayingElement = null;
+  });
+}
+
+function initializeSuggestionPlayers() {
+  const suggestionPlayers = document.querySelectorAll('.suggestions-player');
+  suggestionPlayers.forEach(player => {
+    player.addEventListener('click', handleSuggestionPlayerClick);
+  });
+}
+
 // Export the functions
-export { playerCheck, gradientsCheck, crossCheckPlayer };
+export { playerCheck, gradientsCheck, crossCheckPlayer, initializeSuggestionPlayers };
 

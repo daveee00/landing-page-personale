@@ -1,5 +1,5 @@
 // Import player-related functions
-import { playerCheck, gradientsCheck, crossCheckPlayer } from './player.js';
+import { playerCheck, gradientsCheck, crossCheckPlayer, initializeSuggestionPlayers } from './player.js';
 
 const pictureArray = [
   "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_4.png",
@@ -141,6 +141,7 @@ window.addEventListener("load", () => {
   logTextListElementIndices();
 
   crossCheckPlayer();
+  initializeSuggestionPlayers();
 
   // Add click listeners to all list elements
   textListElement.forEach((id) => {
