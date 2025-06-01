@@ -1,4 +1,4 @@
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   * {
     font-family: monospace;
     box-sizing: border-box;
@@ -267,5 +267,48 @@
 
   .bubbles img {
     height: 10%;
+  }
+}
+
+/* Landscape mode for tablets */
+@media (max-width: 768px) and (orientation: landscape) {
+  main {
+    height: 92vh;
+    margin: 14px 20px 180px 20px;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header a {
+    width: auto;
+    max-width: none;
+  }
+
+  header .primo-testo {
+    width: auto;
+    max-width: none;
+  }
+
+  .animation-section {
+    height: 60vh;
+  }
+
+  .animation-section img {
+    height: 70%;
+  }
+
+  .introduction-text p {
+    width: 70%;
+    max-width: 70%;
+  }
+
+  .separator-element {
+    width: 25%;
+    max-width: 25%;
   }
 }

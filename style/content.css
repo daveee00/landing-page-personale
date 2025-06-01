@@ -7,6 +7,14 @@
   height: 100vh;
   position: relative;
   border-bottom: 2px solid black;
+  transition: position 0.3s ease-out;
+  z-index: 1;
+  background: white;
+}
+
+.drawings {
+  position: relative;
+  z-index: 0;
 }
 
 /*–––––––primo–––––––*/
@@ -230,4 +238,3 @@
   animation: float 3s ease-in-out infinite;
 }
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
-

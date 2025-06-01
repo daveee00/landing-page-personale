@@ -1,9 +1,9 @@
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .content {
     margin: 14px 20px 0px 20px;
     width: calc(100% - 40px);
     max-width: calc(100% - 40px);
-    height: 80vh;
+    height: 100vh;
     position: relative;
     border-bottom: 2px solid black;
   }
@@ -30,14 +30,16 @@
   }
 
   #first-drawing .content-drawing {
-    align-items: last baseline;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: flex-end !important;
   }
 
   #first-drawing img {
-    width: 100%;
+    width: 70% !important;
     margin-right: 0px;
-    margin-bottom: 0%;
+    margin-bottom: 0% !important;
   }
 
   /*–––––––secondo–––––––*/
@@ -64,13 +66,14 @@
 
   #second-drawing .content-drawing {
     align-items: flex-start;
-    justify-content: right !important;
+    justify-content: left !important;
   }
 
   #second-drawing img {
-    height: 70%;
+    height: 65%;
     margin-bottom: 30%;
-    margin-right: 40%;
+    margin-right: 0%;
+    margin-left: -16%;
   }
 
   /*–––––––terzo–––––––*/

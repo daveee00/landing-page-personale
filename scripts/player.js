@@ -31,6 +31,7 @@ const audioPlay = [
 
 let currentlyPlayingAudio = null;
 let currentlyPlayingElement = null;
+let activeGradientElements = new Set(); // Track elements with active gradients
 
 function playerCheck() {
   const buttonsIds = ['player-01', 'player-02', 'player-03', 'player-04', 'player-05', 'player-06'];
@@ -69,7 +70,7 @@ function crossCheckPlayer() {
     player.addEventListener('mouseenter', () => {
       const buttonId = buttonsIds[index];
       const button = document.getElementById(buttonId);
-      if (button) {
+      if (button && !activeGradientElements.has(button)) {
         button.style.background = gradients[index];
       }
     });
@@ -77,7 +78,7 @@ function crossCheckPlayer() {
     player.addEventListener('mouseleave', () => {
       const buttonId = buttonsIds[index];
       const button = document.getElementById(buttonId);
-      if (button) {
+      if (button && !activeGradientElements.has(button)) {
         button.style.background = '';
       }
     });
@@ -88,36 +89,54 @@ function handleSuggestionPlayerClick(event) {
   const clickedElement = event.currentTarget;
   const clickedId = clickedElement.id;
   const index = ButtonIds.indexOf(clickedId);
+  const button = document.getElementById(clickedId);
 
   if (index === -1) return;
 
-  // If clicking the same element that's currently playing, stop the audio
+  // If clicking the same element that's currently playing, stop the audio and remove gradient
   if (currentlyPlayingElement === clickedElement) {
     if (currentlyPlayingAudio) {
       currentlyPlayingAudio.pause();
       currentlyPlayingAudio.currentTime = 0;
       currentlyPlayingAudio = null;
       currentlyPlayingElement = null;
+      if (button) {
+        button.style.background = '';
+        activeGradientElements.delete(button);
+      }
     }
     return;
   }
 
-  // If there's audio playing from a different element, stop it
+  // If there's audio playing from a different element, stop it and remove its gradient
   if (currentlyPlayingAudio) {
     currentlyPlayingAudio.pause();
     currentlyPlayingAudio.currentTime = 0;
+    const previousButton = document.getElementById(currentlyPlayingElement.id);
+    if (previousButton) {
+      previousButton.style.background = '';
+      activeGradientElements.delete(previousButton);
+    }
   }
 
-  // Play the new audio
+  // Play the new audio and apply gradient
   const audio = new Audio(audioPlay[index]);
   audio.play();
   currentlyPlayingAudio = audio;
   currentlyPlayingElement = clickedElement;
+  if (button) {
+    button.style.background = gradients[index];
+    activeGradientElements.add(button);
+  }
 
   // Add event listener to reset state when audio ends
   audio.addEventListener('ended', () => {
     currentlyPlayingAudio = null;
     currentlyPlayingElement = null;
+    if (button) {
+      button.style.background = '';
+      activeGradientElements.delete(button);
+    }
   });
 }
 

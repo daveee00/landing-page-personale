@@ -1,4 +1,4 @@
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .suggestions-and-links {
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
   }
 
   .suggestions-player {
-    height: 56px;
+    height: 72px !important;
     width: 100%;
     border: 2px solid black;
     border-radius: 16px;
@@ -114,5 +114,41 @@
   .external-links svg {
     height: 80%;
     margin-right: 12px;
+  }
+}
+
+/* Landscape mode for tablets */
+@media (max-width: 768px) and (orientation: landscape) {
+  .suggestions-and-links {
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  .suggestions-player {
+    height: 64px;
+    width: 60%;
+  }
+
+  .external-links {
+    height: 64px;
+    width: 40%;
+    display: flex;
+  }
+
+  .cover {
+    height: 90%;
+  }
+
+  .infos {
+    margin-left: 12px;
+  }
+
+  .infos p {
+    font-size: 14px;
+  }
+
+  .content-suggestions button {
+    height: 36px;
   }
 }
