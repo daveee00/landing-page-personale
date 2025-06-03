@@ -1,3 +1,7 @@
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+
 /*––––––––––––––––––––––––––––––––––––content section––––––––––––––––––––––––––––––––––––*/
 
 .content {
@@ -37,7 +41,7 @@
 }
 
 #first-drawing .content-text p {
-  margin-left: 35%;
+  margin-left: 0% !important;
   margin-bottom: 5%;
 }
 
@@ -47,9 +51,9 @@
 }
 
 #first-drawing img {
-  height: 100%;
+  height: 90%;
   margin-right: 80px;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 /*–––––––secondo–––––––*/
@@ -237,4 +241,5 @@
 #sixth-drawing img {
   animation: float 3s ease-in-out infinite;
 }
-/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+}
