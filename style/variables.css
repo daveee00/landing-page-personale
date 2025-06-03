@@ -1,18 +1,24 @@
 @font-face {
-  font-family: 'Humane';
-  src: url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.otf') format('opentype'),
-       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.woff') format('woff');
+  font-family: "Humane";
+  src: url("https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.otf")
+      format("opentype"),
+    url("https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Bold.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Humane';
-  src: url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.otf') format('opentype'),
-       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.woff') format('woff');
+  font-family: "Humane";
+  src: url("https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.otf")
+      format("opentype"),
+    url("https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/daveee00/drawings/fonts/Humane-font/Humane-Medium.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -39,23 +45,23 @@
 }
 
 .text-smaller p {
-    color: #231815;
-    flex: none;
-    font-feature-settings: "palt" 1;
-    font-size: 16px;
-    font-style: normal;
-    font-family: monospace !important;
-    font-weight: 500;
-    height: auto;
-    letter-spacing: normal;
-    line-height: 1.05;
-    margin: 0px;
-    text-align: left;
-    width: calc(100% - (var(--gap-h-6aafdb5d-42fa-4e10-8eb9-428f585b1340) * 0));
-    max-width: calc(
-      100% - (var(--gap-h-6aafdb5d-42fa-4e10-8eb9-428f585b1340) * 0)
-    );
-    justify-content: flex-start;
+  color: #231815;
+  flex: none;
+  font-feature-settings: "palt" 1;
+  font-size: 16px;
+  font-style: normal;
+  font-family: monospace !important;
+  font-weight: 500;
+  height: auto;
+  letter-spacing: normal;
+  line-height: 1.05;
+  margin: 0px;
+  text-align: left;
+  width: calc(100% - (var(--gap-h-6aafdb5d-42fa-4e10-8eb9-428f585b1340) * 0));
+  max-width: calc(
+    100% - (var(--gap-h-6aafdb5d-42fa-4e10-8eb9-428f585b1340) * 0)
+  );
+  justify-content: flex-start;
 }
 
 .title-drawing p {
@@ -86,12 +92,12 @@
 }
 
 .content .content-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 }
 
 .content .content-drawing {
@@ -105,22 +111,22 @@
 }
 
 .content .content-drawing img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .content .content-suggestions {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
 }
 
 .content-title {
@@ -134,4 +140,49 @@
   justify-content: flex-start !important;
   z-index: 2 !important;
   overflow: visible !important;
+}
+
+/*––––––––––––––––––––––––––––––––––––––*/
+
+.audio-on-off {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: top;
+}
+
+#audio-button {
+  height: 40px;
+  aspect-ratio: 16/9;
+  border: 2px solid black;
+  margin-top: 14px;
+  margin-right: 20px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  opacity: calc(30%);
+  transition: 400ms ease-in-out;
+}
+
+#audio-button:hover {
+  opacity: calc(100%);
+}
+
+#selector-audio {
+  height: 32px;
+  aspect-ratio: 1/1;
+  border-radius: 40px;
+  border: 2px solid black;
+  margin: 0px 4px;
+}
+
+#selector-audio:hover {
+  cursor: pointer;
 }

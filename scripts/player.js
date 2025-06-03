@@ -24,7 +24,7 @@ const audioPlay = [
   "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/thank-u-next.mp3",
   "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/espresso-sabrina.mp3",
   "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/runrunrundolph.mp3",
-  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/twilight-zone-ariana.mp3",
+  "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/we-cant-be-friends.mp3",
   "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/diva.mp3",
   "https://cdn.jsdelivr.net/gh/daveee00/landing-page-personale/assets/mp3/donatella.mp3",
 ];
