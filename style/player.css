@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+  gap: 8px;
 }
 
 .suggestions-player {
@@ -14,21 +15,59 @@
   justify-content: space-between;
   align-items: center;
   transition: all 500ms ease-out;
+  z-index: 1000;
 }
 
 .external-links {
-  height: 68px;
-  width: 440px;
+  height: fit-content;
+  width: fit-content;
   border-radius: 16px;
+  border: 2px solid black;
+  background: white;
   display: none;
-  flex-direction: row-reverse;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: left;
   align-items: center;
   transition: all 500ms ease-out;
 }
 
+.ext-inspo {
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  justify-content: center;
+  padding: 16px 16px;
+}
+
+.ext-inspo .img-wrapper {
+  height: 120px;
+  aspect-ratio: 4/3;
+  background: black;
+}
+
+.ext-inspo .img-wrapper a {
+  height: 100%;
+  width: 100%;
+}
+
+.ext-inspo .img-wrapper a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.ext-inspo .img-wrapper img:hover {
+  cursor: pointer;
+  opacity: calc(60%);
+}
+
 #ext-links {
-  display: none;
+  display: flex;
   transition: 500ms ease-out;
 }
 
@@ -107,4 +146,26 @@
 .external-links svg {
   height: 80%;
   margin-right: 12px;
+}
+
+#second-drawing .ext-inspo .img-wrapper {
+  height: 120px;
+  aspect-ratio: 4/3;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#second-drawing .ext-inspo .img-wrapper a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#second-drawing .ext-inspo .img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
