@@ -27,8 +27,12 @@
   display: none;
   flex-direction: column;
   justify-content: left;
-  align-items: center;
+  align-items: left;
   transition: all 500ms ease-out;
+}
+
+.title-inspo {
+  padding: 16px 16px 0px 16px;
 }
 
 .ext-inspo {
@@ -54,12 +58,10 @@
 
 .ext-inspo .img-wrapper a img {
   height: 100%;
-  width: 100%;
+  width: 100%; 
   object-fit: cover;
   object-position: center;
 }
-
-
 
 .ext-inspo .img-wrapper img:hover {
   cursor: pointer;
@@ -148,7 +150,12 @@
   margin-right: 12px;
 }
 
-#second-drawing .ext-inspo .img-wrapper {
+#first-drawing .ext-inspo .img-wrapper,
+#second-drawing .ext-inspo .img-wrapper,
+#third-drawing .ext-inspo .img-wrapper,
+#fourth-drawing .ext-inspo .img-wrapper,
+#fifth-drawing .ext-inspo .img-wrapper,
+#sixth-drawing .ext-inspo .img-wrapper {
   height: 120px;
   aspect-ratio: 4/3;
   background: black;
@@ -156,13 +163,23 @@
   overflow: hidden;
 }
 
-#second-drawing .ext-inspo .img-wrapper a {
+#first-drawing .ext-inspo .img-wrapper a,
+#second-drawing .ext-inspo .img-wrapper a,
+#third-drawing .ext-inspo .img-wrapper a,
+#fourth-drawing .ext-inspo .img-wrapper a,
+#fifth-drawing .ext-inspo .img-wrapper a,
+#sixth-drawing .ext-inspo .img-wrapper a {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-#second-drawing .ext-inspo .img-wrapper img {
+#first-drawing .ext-inspo .img-wrapper a img,
+#second-drawing .ext-inspo .img-wrapper a img,
+#third-drawing .ext-inspo .img-wrapper a img,
+#fourth-drawing .ext-inspo .img-wrapper a img,
+#fifth-drawing .ext-inspo .img-wrapper a img,
+#sixth-drawing .ext-inspo .img-wrapper a img {
   height: 100%;
   width: 100%;
   object-fit: cover;

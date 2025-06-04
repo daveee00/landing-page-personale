@@ -41,7 +41,7 @@
 
 .title-drawing p {
   font-family: "Humane" !important;
-  font-size: 4em;
+  font-size: 4em !important;
   font-weight: 600;
   line-height: 1 !important;
   height: 1em !important;
@@ -76,7 +76,7 @@
 }
 
 .content .content-text p {
-  font-size: 14px;
+  font-size: 12px !important;
 }
 .content .content-drawing {
   position: absolute;
